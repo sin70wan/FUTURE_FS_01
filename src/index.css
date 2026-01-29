@@ -1,0 +1,418 @@
+/* index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #00ff00;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 0;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #cccccc;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 30px;
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #00cc00;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+}
+
+.btn-outline:hover {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+/* About Section */
+.about {
+  padding: 80px 0;
+  border-bottom: 1px solid #333;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #cccccc;
+}
+
+.stats {
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00ff00;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-top: 5px;
+}
+
+/* Skills Section */
+.skills {
+  padding: 80px 0;
+  border-bottom: 1px solid #333;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.skill-category {
+  background-color: rgba(0, 255, 0, 0.05);
+  padding: 25px;
+  border: 1px solid #333;
+}
+
+.skill-category h3 {
+  color: #00ff00;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.skill-category ul {
+  list-style: none;
+}
+
+.skill-category li {
+  color: #cccccc;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.skill-category li:before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: #00ff00;
+}
+
+/* Terminal */
+.terminal {
+  background-color: #000;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #cccccc;
+}
+
+.terminal-title {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.terminal-body {
+  color: #00ff00;
+  line-height: 1.5;
+}
+
+.terminal-prompt {
+  color: #00ff00;
+  margin-right: 10px;
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  outline: none;
+  width: 80%;
+}
+
+/* Contact Section */
+.contact {
+  padding: 80px 0;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+/* Add to index.css */
+
+/* Contact Form Styling */
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field input,
+.input-field textarea {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+  outline: none;
+  border-color: #50fa7b;
+  box-shadow: 0 0 10px rgba(80, 250, 123, 0.3);
+}
+
+/* Social Links in Contact */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-link {
+  color: #8be9fd;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-link:hover {
+  color: #50fa7b;
+  border-color: #00ff00;
+  background: rgba(0, 255, 0, 0.05);
+}
+
+.social-icon {
+  font-size: 1.2rem;
+}
+
+/* Footer Styles */
+.footer {
+  margin-top: 80px;
+  padding: 40px 0;
+  border-top: 1px solid #333;
+}
+
+.footer-terminal {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  padding: 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  color: #00ff00;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-link {
+  color: #cccccc;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s;
+  padding: 5px 0;
+}
+
+.footer-link:hover {
+  color: #50fa7b;
+}
+
+.link-icon {
+  color: #ffb86c;
+  width: 20px;
+}
+
+.status-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #cccccc;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #50fa7b;
+  animation: pulse 2s infinite;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.copyright {
+  color: #8be9fd;
+  margin-bottom: 10px;
+  font-family: 'Courier New', monospace;
+}
+
+.footer-tagline {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Database Connection Status */
+.db-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(0, 255, 0, 0.05);
+  border-radius: 4px;
+}
+
+.db-status.connected .status-dot {
+  background: #50fa7b;
+}
+
+.db-status.disconnected .status-dot {
+  background: #ff5555;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .social-links {
+    flex-direction: column;
+  }
+}
