@@ -2,48 +2,91 @@
 import React from 'react';
 
 const About = () => {
+  const skills = [
+    'Security Architecture',
+    'Penetration Testing',
+    'Full-Stack Development',
+    'DevSecOps',
+    'Cloud Security',
+    'Cryptography',
+    'API Security',
+    'Incident Response'
+  ];
+
   return (
     <section className="about" id="about">
-      <h2>## The Architect & The Breaker</h2>
-      <p>
-        Security isn't a feature—it's the foundation. With a background in both 
-        offensive security (Red Teaming) and scalable software architecture, I bridge 
-        the critical gap between "fast" and "safe."
-      </p>
-      <p>
-        I don't just patch vulnerabilities; I design self-healing architectures that 
-        withstand modern attack vectors. My code is clean, my audits are ruthless.
-      </p>
+      <h2>## About Me</h2>
       
-      <div className="stats">
-        <div className="stat-item">
-          <div className="stat-number">05+</div>
-          <div className="stat-label">Years Exp</div>
+      <div className="about-content">
+        {/* Left Column - Text */}
+        <div className="about-left">
+          <div className="about-text">
+            <p>
+              I bridge the worlds of cybersecurity and software development. 
+              I don't just build applications—I architect fortresses. Every line of code 
+              I write is a layer of defense, every system I design is a challenge to break.
+            </p>
+            <p>
+              As both <strong>Red Team</strong> (attacker) and <strong>Blue Team</strong> (defender), 
+              I understand security from all angles. My approach combines offensive security 
+              expertise with scalable software architecture to create systems that are 
+              not just functional, but fundamentally secure.
+            </p>
+          </div>
+          
+          <div className="skills-list">
+            <h3>Core Expertise:</h3>
+            <div className="skills-grid">
+              {skills.map((skill, index) => (
+                <div key={index} className="skill-item">
+                  <span className="skill-bullet">◈</span>
+                  {skill}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-        <div className="stat-item">
-          <div className="stat-number">50+</div>
-          <div className="stat-label">Audits</div>
-        </div>
-        <div className="stat-item">
-          <div className="stat-number">100%</div>
-          <div className="stat-label">Secure</div>
+        
+        {/* Right Column - Profile Image */}
+        <div className="about-right">
+          <div className="profile-image-container">
+            <div className="image-border"></div>
+            {/* <img 
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+              alt="Lina Temam" 
+              className="profile-image"
+            /> */}
+          </div>
         </div>
       </div>
       
-      <div className="terminal">
+      {/* Terminal Section */}
+      {/* <div className="terminal">
         <div className="terminal-header">
           <span style={{ color: '#ff5555' }}>●</span>
           <span style={{ color: '#ffb86c' }}>●</span>
           <span style={{ color: '#50fa7b' }}>●</span>
-          <div className="terminal-title">zsh - secure-channel - 80×24</div>
+          <div className="terminal-title">terminal:~ $ whoami</div>
         </div>
         <div className="terminal-body">
-          <div>// LOADING_MODULES ...</div>
-          <div style={{ marginTop: '10px' }}>&gt; Initializing secure environment...</div>
-          <div>&gt; Loading encryption protocols...</div>
-          <div>&gt; Ready for secure operations.</div>
+          <div>$ whoami</div>
+          <div style={{ color: '#50fa7b' }}>lina_temam</div>
+          <div>&nbsp;</div>
+          <div>$ cat about.txt</div>
+          <div>
+            <div>Name: Lina Temam</div>
+            <div>Role: Cyber Security Developer</div>
+            <div>Focus: Secure by Design Architecture</div>
+            <div>Approach: Build systems that withstand attacks</div>
+            <div>Philosophy: Security is not a feature, it's the foundation</div>
+          </div>
+          <div>&nbsp;</div>
+          <div>$ ./security_check --current-status</div>
+          <div>&gt; System: ACTIVE</div>
+          <div>&gt; Security: ENABLED</div>
+          <div>&gt; Mode: BUILD & BREAK</div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

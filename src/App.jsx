@@ -54,10 +54,10 @@ function App() {
       <div ref={heroRef} id="hero">
         <Hero />
       </div>
-      <div ref={aboutRef} id="architect">
+      <div ref={aboutRef} id="about">  {/* Changed from id="architect" */}
         <About />
       </div>
-      <div ref={skillsRef} id="arsenal">
+      <div ref={skillsRef} id="skills">  {/* Changed from id="arsenal" */}
         <Skills />
       </div>
       <div ref={contactRef} id="contact">
