@@ -113,6 +113,7 @@ const Contact = () => {
               <div className="input-field">
                 <input
                   type="text"
+                   placeholder="eneter your name"
                   name="identity"
                   value={formData.identity}
                   onChange={handleChange}
@@ -216,14 +217,14 @@ const Contact = () => {
           <div style={{ marginTop: '40px', color: '#8be9fd' }}>
             <div style={{ color: '#ffb86c', marginBottom: '10px' }}># OR CONNECT VIA DIRECT UPLINK:</div>
             <div className="social-links">
-              <a href="mailto:your-email@example.com" className="social-link">
-                <span className="social-icon">✉</span> your-email@example.com
+              <a href="linatemam0707@gmail.com" className="social-link">
+                <span className="social-icon">✉</span> linatemam0707@gmail.com
               </a>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
-                <span className="social-icon">🐙</span> github.com/yourusername
+              <a href="https://github.com/sin70wan" target="_blank" rel="noopener noreferrer" className="social-link">
+                <span className="social-icon">🐙</span> github.com/sin70wan
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
-                <span className="social-icon">💼</span> linkedin.com/in/yourusername
+              <a href="https://www.linkedin.com/in/lina-r" target="_blank" rel="noopener noreferrer" className="social-link">
+                <span className="social-icon">💼</span>https://www.linkedin.com/in/lina-r
               </a>
               <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
                 <span className="social-icon">📸</span> instagram.com/yourusername
