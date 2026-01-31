@@ -9,9 +9,9 @@ const Skills = () => {
       
       <div className="terminal">
         <div className="terminal-header">
-          <span style={{ color: '#a0ffa0' }}>●</span>
-          <span style={{ color: '#a0ffa0' }}>●</span>
-          <span style={{ color: '#a0ffa0' }}>●</span>
+          <span></span>
+          <span></span>
+          <span></span>
           <div className="terminal-title">bash --skills</div>
         </div>
         <div className="terminal-body">

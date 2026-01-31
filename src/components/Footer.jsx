@@ -20,14 +20,14 @@ const Footer = () => {
               <div className="footer-section">
                 <h3>// SECURE CONNECTIONS</h3>
                 <div className="footer-links">
-                  <a href="mailto:lina@example.com" className="footer-link">
-                    <span className="link-icon">📧</span> lina@example.com
+                  <a href="linatemam0707@gmail.com" className="footer-link">
+                    <span className="link-icon">📧</span> linatemam0707@gmail.com
                   </a>
                   <a href="https://github.com/lina-temam" target="_blank" rel="noopener noreferrer" className="footer-link">
                     <span className="link-icon">🔧</span> github.com/lina-temam
                   </a>
-                  <a href="https://linkedin.com/in/lina-temam" target="_blank" rel="noopener noreferrer" className="footer-link">
-                    <span className="link-icon">💼</span> linkedin.com/in/lina-temam
+                  <a href="https://www.linkedin.com/in/lina-r" target="_blank" rel="noopener noreferrer" className="footer-link">
+                    <span className="link-icon">💼</span> https://www.linkedin.com/in/lina
                   </a>
                 </div>
               </div>

@@ -224,7 +224,7 @@ const Contact = () => {
                 <span className="social-icon">🐙</span> github.com/sin70wan
               </a>
               <a href="https://www.linkedin.com/in/lina-r" target="_blank" rel="noopener noreferrer" className="social-link">
-                <span className="social-icon">💼</span>https://www.linkedin.com/in/lina-r
+                <span className="social-icon">💼</span>https://www.linkedin.com/in/lina
               </a>
               <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
                 <span className="social-icon">📸</span> instagram.com/yourusername

@@ -974,3 +974,17 @@ body {
     font-size: 1.5rem;
   }
 }
+/* Remove the transform that moves the box */
+.skill-category:hover {
+  /* REMOVE this line: transform: translateY(-5px); */
+  border-color: var(--green);
+  box-shadow: 0 10px 20px rgba(0, 255, 0, 0.1);
+}
+
+/* Or if you want NO movement at all, just border/color change: */
+.skill-category:hover {
+  border-color: var(--green);
+  /* Optional: subtle glow instead of movement */
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.15);
+  /* No transform - stays in place */
+}
