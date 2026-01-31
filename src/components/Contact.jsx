@@ -82,7 +82,7 @@ const Contact = () => {
 
   return (
     <section className="contact" id="contact">
-      <h2>## Contact Terminal</h2>
+      <h2> Contact Terminal</h2>
       
       <div className="terminal" style={{ maxWidth: '800px', margin: '0 auto' }}>
         <div className="terminal-header">

@@ -1,92 +1,94 @@
 // components/About.jsx
-import React from 'react';
+import React, { useState } from 'react';
+// Import your image from assets - UPDATE THIS PATH!
+import profileImage from '../assets/image.png'; // Change to your actual image filename
 
 const About = () => {
-  const skills = [
-    'Security Architecture',
-    'Penetration Testing',
-    'Full-Stack Development',
-    'DevSecOps',
-    'Cloud Security',
-    'Cryptography',
-    'API Security',
-    'Incident Response'
-  ];
+  const [isHovering, setIsHovering] = useState(false);
 
   return (
     <section className="about" id="about">
-      <h2>## About Me</h2>
-      
-      <div className="about-content">
-        {/* Left Column - Text */}
-        <div className="about-left">
-          <div className="about-text">
+      {/* Simple about content with animated image */}
+      <div className="about-simple">
+        {/* Left: Text content */}
+        <div className="about-text-simple">
+          <h2 className="whoami-title">
+            <span className="highlight">$</span> whoami
+          </h2>
+          <div className="terminal-response">
+            <span className="username">lina_temam</span>
+            <span className="role">Cyber Security + Developer</span>
+          </div>
+          
+          <div className="bio-text">
             <p>
-              I bridge the worlds of cybersecurity and software development. 
-              I don't just build applications—I architect fortresses. Every line of code 
-              I write is a layer of defense, every system I design is a challenge to break.
+              I bridge cybersecurity and software development to create systems that are 
+              <span className="highlight"> secure by design</span>. I don't just build applications—
+              I architect digital fortresses where every line of code serves as both 
+              functionality and defense.
             </p>
             <p>
-              As both <strong>Red Team</strong> (attacker) and <strong>Blue Team</strong> (defender), 
-              I understand security from all angles. My approach combines offensive security 
-              expertise with scalable software architecture to create systems that are 
-              not just functional, but fundamentally secure.
+              With experience in both <span className="highlight">offensive security</span> (testing systems by breaking them) 
+              and <span className="blue-team">defensive architecture</span> (building systems to withstand attacks), I approach 
+              security from all angles to ensure comprehensive protection.
             </p>
           </div>
           
-          <div className="skills-list">
-            <h3>Core Expertise:</h3>
-            <div className="skills-grid">
-              {skills.map((skill, index) => (
-                <div key={index} className="skill-item">
-                  <span className="skill-bullet">◈</span>
-                  {skill}
-                </div>
-              ))}
-            </div>
+          <div className="simple-philosophy">
+            <div className="philosophy-line">"Secure by Design,</div>
+            <div className="philosophy-line">Tested by Experience,</div>
+            <div className="philosophy-line">Trusted by Users"</div>
           </div>
         </div>
         
-        {/* Right Column - Profile Image */}
-        <div className="about-right">
-          <div className="profile-image-container">
-            <div className="image-border"></div>
-            {/* <img 
-              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+        {/* Right: Animated profile image */}
+        <div className="profile-image-animated-container">
+          <div 
+            className={`profile-image-wrapper ${isHovering ? 'hovering' : ''}`}
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+          >
+            {/* Glowing border effect */}
+            <div className="image-glow"></div>
+            
+            {/* Main image with black & white effect */}
+            <img 
+              src={profileImage} 
               alt="Lina Temam" 
-              className="profile-image"
-            /> */}
+              className={`profile-image-animated ${isHovering ? 'color' : 'bw'}`}
+            />
+            
+            {/* Floating particles effect */}
+            <div className="particles">
+              {[...Array(8)].map((_, i) => (
+                <div key={i} className="particle" style={{ '--i': i }}></div>
+              ))}
+            </div>
+            
+            {/* Scan line effect */}
+            <div className="scan-line"></div>
+            
+            {/* Status indicator */}
+            <div className="image-status-animated">
+              <span className="status-pulse"></span>
+              <span className="status-text">SYSTEM ACTIVE</span>
+            </div>
+          </div>
+          
+          {/* Terminal commands */}
+          <div className="image-terminal">
+            <div className="terminal-line">
+              <span className="highlight">$</span> ./image_status.sh
+            </div>
+            <div className="terminal-line">
+              <span className="highlight">&gt;</span> SECURITY: ENABLED
+            </div>
+            <div className="terminal-line">
+              <span className="highlight">&gt;</span> HOVER: {isHovering ? 'COLOR_MODE' : 'BW_MODE'}
+            </div>
           </div>
         </div>
       </div>
-      
-      {/* Terminal Section */}
-      {/* <div className="terminal">
-        <div className="terminal-header">
-          <span style={{ color: '#ff5555' }}>●</span>
-          <span style={{ color: '#ffb86c' }}>●</span>
-          <span style={{ color: '#50fa7b' }}>●</span>
-          <div className="terminal-title">terminal:~ $ whoami</div>
-        </div>
-        <div className="terminal-body">
-          <div>$ whoami</div>
-          <div style={{ color: '#50fa7b' }}>lina_temam</div>
-          <div>&nbsp;</div>
-          <div>$ cat about.txt</div>
-          <div>
-            <div>Name: Lina Temam</div>
-            <div>Role: Cyber Security Developer</div>
-            <div>Focus: Secure by Design Architecture</div>
-            <div>Approach: Build systems that withstand attacks</div>
-            <div>Philosophy: Security is not a feature, it's the foundation</div>
-          </div>
-          <div>&nbsp;</div>
-          <div>$ ./security_check --current-status</div>
-          <div>&gt; System: ACTIVE</div>
-          <div>&gt; Security: ENABLED</div>
-          <div>&gt; Mode: BUILD & BREAK</div>
-        </div>
-      </div> */}
     </section>
   );
 };

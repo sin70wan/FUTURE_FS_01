@@ -4,61 +4,67 @@ import React from 'react';
 const Skills = () => {
   return (
     <section className="skills" id="skills">
-      <h2>## Technical Arsenal</h2>
-      <p>Comprehensive toolkit for defense and development.</p>
+      <h2> Skills & Learning</h2>
+      <p>Tools and technologies I'm working with</p>
       
       <div className="terminal">
         <div className="terminal-header">
-          <span style={{ color: '#ff5555' }}>●</span>
-          <span style={{ color: '#ffb86c' }}>●</span>
-          <span style={{ color: '#50fa7b' }}>●</span>
-          <div className="terminal-title">bash - load_modules.sh</div>
+          <span style={{ color: '#a0ffa0' }}>●</span>
+          <span style={{ color: '#a0ffa0' }}>●</span>
+          <span style={{ color: '#a0ffa0' }}>●</span>
+          <div className="terminal-title">bash --skills</div>
         </div>
         <div className="terminal-body">
-          <div>$ ./load_modules --all</div>
-          <div>&gt; Loading offensive security modules...</div>
-          <div>&gt; Loading backend architecture modules...</div>
-          <div>&gt; Loading cryptography modules...</div>
-          <div>&gt; Loading frontend security modules...</div>
-          <div>&gt; All modules loaded successfully.</div>
+          <div>$ ./check_current_skills</div>
+          <div>&gt; TryHackMe: Active</div>
+          <div>&gt; PortSwigger: Learning</div>
+          <div>&gt; PicoCTF: Completed</div>
+          <div>&gt; Status: Building Foundations</div>
         </div>
       </div>
       
       <div className="skills-grid">
         <div className="skill-category">
-          <h3>### Offensive Security</h3>
+          <h3>Web Development</h3>
           <ul>
-            <li>Pen Testing</li>
-            <li>Burp Suite</li>
-            <li>OWASP Top 10</li>
-          </ul>
-        </div>
-        
-        <div className="skill-category">
-          <h3>### Backend Architecture</h3>
-          <ul>
+            <li>React.js</li>
             <li>Node.js</li>
-            <li>Go</li>
-            <li>PostgreSQL</li>
-            <li>Redis</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+            <li>Git & GitHub</li>
           </ul>
         </div>
         
         <div className="skill-category">
-          <h3>### Cryptography & Auth</h3>
+          <h3>Security Practice</h3>
           <ul>
-            <li>OAuth 2.0</li>
-            <li>JWT</li>
-            <li>Zero Knowledge</li>
+            <li>TryHackMe</li>
+            <li>PortSwigger</li>
+            <li>PicoCTF</li>
+            <li>OWASP Basics</li>
+            <li>Burp Suite</li>
           </ul>
         </div>
         
         <div className="skill-category">
-          <h3>### Frontend Secure</h3>
+          <h3>Tools</h3>
           <ul>
-            <li>Next.js</li>
-            <li>React</li>
-            <li>CSP Headers</li>
+            <li>VS Code</li>
+            <li>Linux Terminal</li>
+            <li>Postman</li>
+            <li>Docker Basics</li>
+            <li>MariaDB</li>
+          </ul>
+        </div>
+        
+        <div className="skill-category">
+          <h3>Currently Learning</h3>
+          <ul>
+            <li>Web App Security</li>
+            <li>API Security</li>
+            <li>Secure Coding</li>
+            <li>Cloud Basics</li>
+            <li>React Native</li>
           </ul>
         </div>
       </div>
