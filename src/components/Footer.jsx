@@ -23,7 +23,7 @@ const Footer = () => {
                   <a href="linatemam0707@gmail.com" className="footer-link">
                     <span className="link-icon">📧</span> linatemam0707@gmail.com
                   </a>
-                  <a href="https://github.com/lina-temam" target="_blank" rel="noopener noreferrer" className="footer-link">
+                  <a href="https://github.com/sin70wan" target="_blank" rel="noopener noreferrer" className="footer-link">
                     <span className="link-icon">🔧</span> github.com/lina-temam
                   </a>
                   <a href="https://www.linkedin.com/in/lina-r" target="_blank" rel="noopener noreferrer" className="footer-link">
@@ -38,8 +38,8 @@ const Footer = () => {
                   <a href="https://twitter.com/lina_temam" target="_blank" rel="noopener noreferrer" className="footer-link">
                     <span className="link-icon">🐦</span> @lina_temam
                   </a>
-                  <a href="https://instagram.com/lina.temam" target="_blank" rel="noopener noreferrer" className="footer-link">
-                    <span className="link-icon">📸</span> instagram.com/lina.temam
+                  <a href="https://instagram.com/lin_temam" target="_blank" rel="noopener noreferrer" className="footer-link">
+                    <span className="link-icon">📸</span> instagram.com/lin_temam
                   </a>
                   <a href="https://medium.com/@lina.temam" target="_blank" rel="noopener noreferrer" className="footer-link">
                     <span className="link-icon">✍️</span> medium.com/@lina.temam

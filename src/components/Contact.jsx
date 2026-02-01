@@ -226,8 +226,8 @@ const Contact = () => {
               <a href="https://www.linkedin.com/in/lina-r" target="_blank" rel="noopener noreferrer" className="social-link">
                 <span className="social-icon">💼</span>https://www.linkedin.com/in/lina
               </a>
-              <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-link">
-                <span className="social-icon">📸</span> instagram.com/yourusername
+              <a href="https://instagram.com/lin_temam" target="_blank" rel="noopener noreferrer" className="social-link">
+                <span className="social-icon">📸</span> instagram.com/lin_temam
               </a>
             </div>
           </div>
