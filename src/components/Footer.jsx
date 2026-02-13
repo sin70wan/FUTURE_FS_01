@@ -35,15 +35,13 @@ const Footer = () => {
               <div className="footer-section">
                 <h3>// SOCIAL CHANNELS</h3>
                 <div className="footer-links">
-                  <a href="https://twitter.com/lina_temam" target="_blank" rel="noopener noreferrer" className="footer-link">
-                    <span className="link-icon">🐦</span> @lina_temam
+                  <a href="https://twitter.com/@lina80947491111" target="_blank" rel="noopener noreferrer" className="footer-link">
+                    <span className="link-icon">🐦</span> @lina80947491111
                   </a>
                   <a href="https://instagram.com/lin_temam" target="_blank" rel="noopener noreferrer" className="footer-link">
                     <span className="link-icon">📸</span> instagram.com/lin_temam
                   </a>
-                  <a href="https://medium.com/@lina.temam" target="_blank" rel="noopener noreferrer" className="footer-link">
-                    <span className="link-icon">✍️</span> medium.com/@lina.temam
-                  </a>
+                  
                 </div>
               </div>
               
