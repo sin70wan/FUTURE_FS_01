@@ -7,12 +7,14 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Projects from './components/Projects';  
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
   const heroRef = useRef(null);
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
+    const projectsRef = useRef(null);  
   const contactRef = useRef(null);
   const footerRef = useRef(null);
 
@@ -33,7 +35,10 @@ function App() {
 
     if (heroRef.current) observer.observe(heroRef.current);
     if (aboutRef.current) observer.observe(aboutRef.current);
-    if (skillsRef.current) observer.observe(skillsRef.current);
+    if (skillsRef.current) observer.observe(skillsRef.current);   
+     if (projectsRef.current) observer.observe(projectsRef.current);  
+
+
     if (contactRef.current) observer.observe(contactRef.current);
     if (footerRef.current) observer.observe(footerRef.current);
 
@@ -59,6 +64,8 @@ function App() {
       </div>
       <div ref={skillsRef} id="skills">  {/* Changed from id="arsenal" */}
         <Skills />
+      </div>      <div ref={projectsRef} id="projects">  {/* <-- ADD THIS SECTION */}
+        <Projects />
       </div>
       <div ref={contactRef} id="contact">
         <Contact />
