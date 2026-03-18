@@ -39,7 +39,7 @@ const Projects = () => {
     {
       title: "AI Shopping Assistant",
       desc: "E-commerce with AI recommendations",
-      github: "https://github.com/yourusername/ai-shopping",
+      github: "https://github.com/sin70wan/ai-shoping-assistant",
       status: "in-progress"
     },
     {
