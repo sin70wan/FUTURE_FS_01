@@ -26,7 +26,7 @@ const Footer = () => {
                   <a href="https://github.com/sin70wan" target="_blank" rel="noopener noreferrer" className="footer-link">
                     <span className="link-icon">🔧</span> github.com/lina-temam
                   </a>
-                  <a href="https://www.linkedin.com/in/lina-r" target="_blank" rel="noopener noreferrer" className="footer-link">
+                  <a href="https://www.linkedin.com/in/lina-r-b836b938b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="footer-link">
                     <span className="link-icon">💼</span> https://www.linkedin.com/in/lina
                   </a>
                 </div>
